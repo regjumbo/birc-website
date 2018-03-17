@@ -1,0 +1,365 @@
+@media only screen and (max-width: 1936px) {
+    .container .logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .side-nav .side-ul-nav {
+        grid-area: span 1/2;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid-after .text {
+        font-size: 2.8em;
+    }
+    .l-grid {
+        display: flex;
+        flex-direction: row;
+        .text {
+            margin: 0em auto 1em auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .birc_nav_logo .logo1 {
+        display: none;
+    }
+    .vibrant-economy,
+    .vibrant-people {
+        font-size: 3em;
+    }
+    .grid-after .text {
+        font-size: 2.6em
+    }
+    .footer .icons ul.f1 .f2 {
+        margin: 0 10px;
+    }
+    .item-alpha {
+        display: flex;
+        h1 {
+            @include h1-q;
+            font-size: 3em;
+        }
+    }
+    .l-grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .item-cis {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .side-nav .side-ul-nav {
+        grid-area: span 1/1;
+        .u-home {
+            width: 110px;
+            height: 65;
+        }
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .container .logo {
+        display: none;
+    }
+    .site-nav {
+        li {
+            a {
+                padding: 1.3em 1.3em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container .logo {
+        display: none;
+    }
+    .central-svg-logo {
+        display: block;
+        width: 70%;
+    }
+    .slideshow .slide .title {
+        font-size: 25px;
+        margin: 0 auto 30px;
+    }
+    .slideshow .arrows .next {
+        right: 0px
+    }
+    .slideshow .arrows .prev {
+        left: 0px
+    }
+    .parallex-graph .about-us-p1,
+    .birc-history-words {
+        h1 {
+            @include h1-q;
+        }
+    }
+    .para-1 {
+        @include para-q;
+    }
+    .nlng-img .patner-with-us,
+    {
+        @include floating-text;
+    }
+    .what-we-do-body {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    .what-we-do-header {
+        @include h1-q;
+    }
+    .training,
+    .box-staffing,
+    .researching-works {
+        p {
+            @include para-q;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: .8em auto;
+        }
+    }
+    .job-interview {
+        .job-market {
+            @include floating-text;
+            a {
+                margin: 0em 4em;
+            }
+        }
+    }
+    .birc-history-words {
+        h2 {
+            font-size: 2em;
+        }
+    }
+    .king-grid,
+    .birc-history2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .birc-history-words1,
+    .birc-history-words2 {
+        margin: 0 auto 2em auto;
+        p {
+            @include para-q2;
+            margin: 0 auto 2em auto;
+        }
+    }
+    .king-pics,
+    .chairman-pics {
+        display: none;
+    }
+    .vibrant-economy {
+        @include floating-text;
+    }
+    .vibrant-people {
+        display: none;
+    }
+    .king-pics-mobile,
+    .chairman-pics-mobile {
+        margin: auto;
+        display: block;
+        margin-bottom: 1em;
+        img {
+            border-radius: 5px;
+            box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+        }
+    }
+    .blog-post {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-c {
+        margin: auto;
+        text-align: center;
+        padding-top: 1em;
+        .footer-contact {
+            padding: 0 .8em;
+            font-size: .7em;
+        }
+    }
+    .blog-post {
+        margin: 2em auto;
+    }
+    .block {
+        display: flex;
+        flex-direction: column;
+        .community {
+            h2 {
+                margin: 0;
+            }
+        }
+    }
+    .icons {
+        .f1 {
+            padding: 0;
+            .f2 {
+                margin: 0 2px;
+                a {
+                    width: 58px;
+                    height: 58px;
+                }
+            }
+        }
+    }
+    .highlights {
+        margin: 0;
+        text-align: center;
+        padding: 0 .8em;
+        font-size: .7em;
+    }
+}
+
+@media (min-width: 700px) {
+    .menu-toggle {
+        display: none;
+    }
+    .site-nav {
+        height: auto;
+        position: relative;
+        background: transparent;
+        float: right;
+        clip-path: initial;
+    }
+    .site-nav li {
+        display: inline-block;
+        border: none;
+    }
+    .site-nav a:hover,
+    .site-nav a:focus {
+        background: transparent;
+    }
+    .site-nav--icon {
+        display: none;
+    }
+    .white_space {
+        height: 1px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container .logo {
+        display: block;
+    }
+    .side-nav .side-ul-nav {
+        grid-area: span 1/4;
+        .u-home {
+            width: 130px;
+            height: 54px;
+            line-height: 55px;
+        }
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .birc-history-words h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .central-svg-logo {
+        display: block;
+        width: 100%;
+    }
+    .chairman-pics-mobile img,
+    .king-pics-mobile img {
+        box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    }
+    .vibrant-economy {
+        font-size: 2.5em;
+    }
+    .item-alpha h2 {
+        font-size: 2.5em;
+    }
+    .grid-after .text {
+        margin: .3em 5em 1em 0;
+        font-size: 3em;
+    }
+    .name_ {
+        font-size: 1.5em;
+    }
+    .footer-c {
+        text-align: center;
+        font-size: 15px;
+    }
+    .block .community h2 {
+        text-align: center;
+    }
+    .highlights {
+        text-align: center;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    .birc-history-words h1 {
+        font-size: 2em;
+    }
+    .job-interview .job-market {
+        font-size: 2em;
+        margin: auto;
+    }
+    .vibrant-economy {
+        font-size: 2em;
+    }
+    .item-alpha h1 {
+        font-size: 2.5em;
+    }
+    .grid-after .text {
+        margin: .3em 4em 1em 0;
+        font-size: 2.5em;
+    }
+    .blog-p h1 {
+        font-size: 2.5em;
+        margin: .7em auto 0 auto;
+    }
+    .blog-post {
+        margin: 0 auto 2em auto;
+    }
+}
+
+@media only screen and (max-width: 344px) {
+    .side-nav .side-ul-nav {
+        grid-area: span 1/5;
+        .u-home {
+            width: 100px;
+        }
+    }
+    .job-interview .job-market {
+        font-size: 1.8em;
+    }
+    .vibrant-economy {
+        font-size: 1.9em;
+    }
+    .birc-history-words h1 {
+        font-size: 1.7em;
+    }
+    .item-alpha h1 {
+        font-size: 2.2em;
+    }
+    .grid-after .text {
+        font-size: 2.2em;
+    }
+    .item-cis {
+        min-width: 280px;
+        .name_ {
+            font-size: 1.2em;
+        }
+    }
+    .footer .icons ul.f1 .f2 {
+        margin: 0 5px;
+    }
+}

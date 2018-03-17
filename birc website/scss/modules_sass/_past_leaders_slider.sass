@@ -1,0 +1,134 @@
+// THE GRID SYSTEM
+.l-grid
+
+  display: flex
+  flex-flow: nowrap
+  flex-direction: row
+ 
+.item-alpha
+   h1
+    @include h1
+
+.space-a, .text, .space-mid, .item-cis, .space-last
+  flex: 1
+
+.grid-after .text
+    color: #ccc
+    align-content: center
+    text-align: center
+    font-size: 3.2em
+    line-height: 1em
+    letter-spacing: 3px
+
+/* rwd */
+
+.rslides1
+    position: relative
+    list-style: none
+    overflow: hidden
+    width: 100%
+    padding: 0
+    margin: 0
+    box-shadow: 0 36px 9px -20px rgba(0, 0, 0, 0.15)
+
+
+.rslides1 li:first-child
+    position: relative
+    display: block
+    float: left
+
+.rslides1 img
+    display: block
+    height: auto
+    float: left
+    width: 100%
+    border: 0
+    border-radius: 10px
+
+.windows-tint4
+    background-color: rgba(0,0,0,0.3)
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 10px
+
+
+.name_
+    color: #fff
+    font-size: 1.5em
+    padding-top: 70%
+
+
+.text
+  font-family: 'Open Sans', sans-serif
+  font-weight: 600
+
+
+.text p
+  display: inline-block
+  vertical-align: top
+  margin: 0
+
+.word
+  position: absolute
+
+  opacity: 0
+
+
+.letter
+  display: inline-block
+  position: relative
+  float: left
+  transform: translateZ(25px)
+  transform-origin: 50% 50% 25px
+
+
+.letter.out
+  transform: rotateX(90deg)
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+
+
+.letter.behind
+  transform: rotateX(-90deg)
+
+
+.letter.in
+  transform: rotateX(0deg)
+  transition: transform 0.38 cubic-bezier(0.175, 0.885, 0.32, 1.275)
+
+
+.wisteria
+  color: #7e6d5a
+
+
+.belize
+  color: #b8bdb7
+
+
+.pomegranate
+  color: #94d4f7
+
+
+.green
+  color: #16a085
+
+
+.midnight
+  color: #bd1f1e
+
+.item-cis 
+        margin: auto
+        min-width: 340px
+    
+
+
+
+
+  
+    
+

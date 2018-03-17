@@ -1,0 +1,54 @@
+ <!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+      <link rel="stylesheet" href="form.css">
+    <title>formDemo.html</title>
+    <meta charset = "UTF-8" />
+  </head>
+  <body>
+    <h1>Curriculum Vitae Form</h1>
+    <form action="" method="post">
+        <h3>Detail</h3>
+    <label><b>name:</b></label><input type="text" name="name"><br><br>
+    <label><b>surname:</b></label><input type="text" name="surname"><br><br>
+    <label><b>other:</b></label><input type="text" name="other_names"><br><br>
+    <label><b>address:</b></label><textarea name="address"></textarea><br><br>
+    <label><b>phone:</b></label><input type="number" name="number"><br><br>
+    <label><b>Email:</b></label><input type="email" placeholder="Enter Email" name="email" required>
+        
+        <h3>Profile</h3>
+    <label><b>Gender:</b></label><input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female<br>
+    <label><b>Status:</b></label><input type="radio" name="status" value="single">single<input type="radio" name="status" value="married">married<br>
+   <label><b>date of birth</b></label><input type="date" name="date"><br><br>
+   <label><b>State of Origin</b></label><input type="text" name="state"><br><br>
+   <label><b>Home Town</b></label><input type="text" name="town"><br><br>
+             <h3><b>Qualification</b></h3>
+             <select  name="qualification">
+               <option value = "WAEC">WAEC</option>
+               <option value = "OHD">OND</option>
+               <option value = "HND">HND</option>
+               <option value = "B.Tech">B.Tech</option>
+               <option value = "BSc">BSc</option>
+               <option value = "MSc">MSc</option>
+               <option value = "PHD">PHD</option>
+             </select><br><br>
+        <label><b>Other Qualification</b></label><input type="text" name="other_qualification"><br><br>
+        <label><b>Skills and Abilities</b></label><input type="text" name="skills"><br><br>
+        <h3>Work Experiences</h3>
+        <label>Company</label><input type="text" name="company"><br>
+        <label>Duration</label><input type="text" name="duration"><br>
+        <label>Job Description</label><input type="text" name="company">
+        <h3>Upload file</h3>
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        
+        
+<input type="submit" value="submit" name="submit">
+    </form>
+      
+    
+  </body>
+</html>

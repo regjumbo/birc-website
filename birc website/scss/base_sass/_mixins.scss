@@ -1,0 +1,130 @@
+@mixin h1() {
+    display: flex;
+    font-weight: 200;
+    color: $h1color;
+    font-size: $h1size;
+    align-items: center;
+    justify-content: center;
+    margin: .7em auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin h2 {
+    font-weight: 100;
+    color: $h1color;
+    font-size: $h2size;
+    text-align: center;
+    margin: 0 0 .8em 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin paragraph () {
+    padding: 0 0 4.5em 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: $psize;
+    font-weight: 100px;
+    line-height: 24px;
+    color: #444;
+    letter-spacing: 1.8px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin modal-paragraph {
+    font-weight: 100px;
+    color: #555;
+    letter-spacing: 1.4px;
+    font-size: 1em;
+    padding: 2em;
+    line-height: 2em;
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin tint {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin cta {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: .7em;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0em 2em;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        background: white;
+        color: black;
+    }
+}
+
+@mixin bg-fixed {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+@mixin letter-on-tint {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 50px;
+    a {
+        display: block;
+    }
+}
+
+@mixin buttons-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80%;
+    font-weight: 400;
+    color: #61a0ac;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid #61a0ac 1px;
+    padding: .7em;
+    border-radius: 5px;
+    transition: all 0.5s;
+    &:hover {
+        color: #cbdfd6;
+        border: solid #cbdfd6 .5px;
+    }
+}
+
+@mixin modal-trans {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+@mixin modal-content {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 5% auto;
+    width: 80%;
+    height: auto;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .17);
+    border-radius: 10px;
+    animation-name: modalopen;
+    animation-duration: 1s;
+}

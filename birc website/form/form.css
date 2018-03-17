@@ -1,0 +1,103 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    background-color: #efefef;
+    width: 100%;
+}
+
+form {
+    box-shadow: 0px 0px 30px 0px #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 50px;
+    width: 35%;
+    margin: auto;
+    font-family: calibri;
+    background-color: #fff;
+}
+span{
+    margin-right: 50px;
+
+}
+img{
+    width: 4%;
+    height: 30px;
+   
+}
+
+h1 {
+    text-align: center;
+    color: #011a6a;
+}
+
+h3 {
+    color: #2d5cfc;
+}
+
+label {
+    text-align: right;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+input[type=radio] {
+    width: 30px;
+}
+
+input[type=file] {
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: #2d5cfc;
+    color: white;
+    font-family: arial;
+    line-height: 10px;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: #557cfd;
+    box-shadow: 0px 0px 3px 2px #557cfd;
+    color: #bbb;
+}
+
+.upload {
+    text-align: center;
+}
+
+
+/*/////-------------Form Medium Screen -----------------------*/
+
+
+@media (max-width: 1500px) {
+   
+    form{
+        width: 50%;
+    }
+}
+
+/*/////-------------Form Small Screen -----------------------*/
+
+
+@media (max-width: 800px) {
+   
+    form{
+        width: 90%;
+    }
+}

@@ -1,0 +1,279 @@
+.modal,
+.modal1,
+.modal2,
+.modal3,
+.modal4 {
+    @include modal-trans;
+}
+
+.modal-content {
+    @include modal-content;
+}
+
+.modal-header,
+.present-leadership,
+.ict-team {
+    h1 {
+        @include h1;
+        color: #d2d2d2;
+        margin: 0 auto;
+    }
+}
+
+.modal-body {
+    @include modal-paragraph;
+    h2 {
+        margin: 0 auto;
+    }
+    p {
+        margin: 0 auto;
+    }
+}
+
+.closedBtn,
+.closedBtn1,
+.closedBtn2,
+.closedBtn3,
+.closedBtn4 {
+    color: #ccc;
+    float: right;
+    padding-right: .7em;
+    font-size: 30px;
+    color: #fff;
+}
+
+.closedBtn:hover,
+.closedBtn:focus,
+.closedBtn1:hover,
+.closedBtn1:focus,
+.closedBtn2:hover,
+.closedBtn2:focus,
+.closedBtn3:hover,
+.closedBtn3:focus,
+.closedBtn4:hover,
+.closedBtn4:focus {
+    color: #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    position: relative;
+    background-color: #003333;
+}
+
+.present-leadership {
+    background-color: #f2583e;
+}
+
+.ict-header {
+    background-color: #f37a65;
+}
+
+.ict-first-three,
+.c-chairman,
+.sec-oh {
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.cards,
+.card,
+.cards-mobile {
+    position: relative;
+    display: flex;
+    margin: 2em auto;
+    background: #008686;
+    transform: scale(1);
+    transition: all 0.5s;
+    border-radius: 10px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 1.25em;
+        bottom: 1.25em;
+        left: 1.25em;
+        right: 1.25em;
+    }
+    &::before {
+        transform: scale(0, 1);
+        transition: transform ease-out 250ms;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+    &::after {
+        transform: scale(1, 0);
+        transition: transform ease-out 250ms;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+    &:hover::before {
+        transform: scale(1.05, 1);
+    }
+    &:hover::after {
+        transform: scale(1, 1.05);
+    }
+    &:hover {
+        transform: scale(.93);
+        box-shadow: 0px 10px 5px -10px rgba(0, 0, 0, 0.4);
+    }
+    img {
+        max-width: 100%;
+        background: #008686;
+        display: block;
+        border-radius: 10px;
+        transition: opacity .25s ease-in-out;
+        opacity: 1;
+    }
+}
+
+.cards:hover img {
+    opacity: .4;
+    border-radius: 5px;
+}
+
+.card:hover img {
+    opacity: .4;
+    border-radius: 5px;
+}
+
+.cards-mobile:hover img {
+    opacity: .4;
+    border-radius: 5px;
+}
+
+.cards-mobile {
+    display: none;
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+.cards:hover .card-text {
+    opacity: 1;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+}
+
+.cards-mobile:hover .card-text {
+    opacity: 1;
+}
+
+.p-l {
+    @include modal-paragraph;
+}
+
+.ict-first-three,
+{
+    padding-bottom: 3em;
+}
+
+@media only screen and (max-width: 1000px) {
+    .modal-header,
+    .present-leadership,
+    .ict-team {
+        h2 {
+            font-size: 2.5em;
+        }
+    }
+    .p-l {
+        max-width: 700px;
+        margin: 2.2em auto;
+        line-height: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-header,
+    .present-leadership,
+    .ict-team {
+        h2 {
+            font-size: 2em;
+        }
+    }
+    .p-l {
+        max-width: 380px;
+        margin: 1.5em auto;
+        line-height: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .modal-header,
+    .present-leadership,
+    .ict-team {
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+    .p-l {
+        max-width: 300px;
+        margin: 2em auto;
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+    .modal-content {
+       
+        margin: 9% auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .modal-header,
+    .present-leadership,
+    .ict-team {
+        h1 {
+            font-size: 2em;
+        }
+    }
+    .p-l {
+        max-width: 450px;
+        margin: 1.5em auto;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .card,
+    .cards {
+        display: none;
+    }
+    .cards-mobile {
+        display: flex;
+    }
+    .modal-header,
+    .present-leadership,
+    .ict-team {
+        h1 {
+            font-size: 1.8em;
+        }
+    }
+    .p-l {
+        max-width: 300px;
+        font-size: .9em;
+    }
+}

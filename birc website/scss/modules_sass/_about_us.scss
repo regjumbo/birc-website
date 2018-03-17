@@ -1,0 +1,27 @@
+.parallex-graph .about-us-p1 h1{
+    @include h1();
+}
+
+.para-1{
+    @include paragraph();
+    max-width: 640px;
+}
+
+.nlng-img{
+    background-image: url(/img/nlng-train.jpg);
+    @include bg-fixed;
+    
+    .window-tint{
+        @include tint;
+    }
+    .patner-with-us{
+        @include letter-on-tint;
+    }
+}
+  
+.window-cta{
+    @include cta;
+}
+  
+
+ 
